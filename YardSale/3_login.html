@@ -41,11 +41,6 @@
             justify-self: center;
             display: none;
         }
-        .title{
-            font-size: var(--lg);
-            margin-bottom: 36px;
-            text-align: start;
-        }
         .form{
             display: flex;
             flex-direction: column;
@@ -90,13 +85,33 @@
             margin-top: 14px;
             margin-bottom: 30px;
         }
+        .form a{
+            color: var(--hospital-green);
+            font-size: var(--sm);
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 54px;
+        }
+        .secundary-button{
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--hospital-green);
+            border-color: var(--hospital-green);
+            color: var(--hospital-green);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-family: 'Quicksand','sans-serif';
+            font-weight: bold;
+            height: 50px;
+        }
         @media (max-width: 640px){
-            .secundary-button {
-                height: 100%;
-                justify-content: space-between;
-            }
             .logo{
                 display: block;
+            }
+            
+            .secundary-button{
+                margin-top: 142px;
             }
         }
     </style>
@@ -108,18 +123,14 @@
             
             
             <form action="/" class="form">
-                <div>
-                    
-
-                    <label for="new-password" class="label">Email address</label>
-                    <input type="email" id="email" placeholder="FulanitoDeTalPresente@example.com" class="input input-email"> 
-                
-                    <label for="password" class="label">Password</label>
-                    <input type="password" id="password" placeholder="********" class="input input-password"> 
-                </div>
+                <label for="new-password" class="label">Email address</label>
+                <input type="email" id="email" placeholder="FulanitoDeTalPresente@example.com" class="input input-email"> 
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="********" class="input input-password"> 
                 <input type="submit" value="Log in" class="primary-button login-button">
-                <a href="/">Forgot my password</a>
-                <input type="submit" value="Sing up" class="secundary-button login-button">            </form>
+                <a href="/">Forgot my password</a>             
+            </form>
+            <button class="secundary-button login-button">Sing up</button>
         </div>
     </div>
 </body>
