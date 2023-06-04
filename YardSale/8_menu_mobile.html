@@ -23,6 +23,35 @@
         body {
             font-family: 'Quicksand', sans-serif;
             margin: 0;
+           
+        }
+        .mobile-menu {
+            padding: 24px;
+
+        }
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+        .mobile-menu ul {
+            padding: 0;
+            margin: 24px 0 0;
+            list-style: none;
+        }
+        .mobile-menu ul:nth-child(1){
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .mobile-menu ul li {
+            margin-bottom: 24px;
+        }
+        .email {
+            font-size: var(--sm);
+            font-weight: 300 !important;
+        }
+        .sing-out {
+            font-size: var(--sm);
+            color: var(--hospital-green) !important;
         }
 </style>
 <body>
@@ -67,10 +96,10 @@
         </ul>
         <ul>
             <li>
-                <a href="">FulanitoDeTalPresente@example.com</a>
+                <a href="/" class="email">FulanitoDeTalPresente@example.com</a>
             </li>
             <li>
-                <a href="">Sing out</a>
+                <a href="/" class="sing-out">Sing out</a>
             </li>
         </ul>
     </div>
